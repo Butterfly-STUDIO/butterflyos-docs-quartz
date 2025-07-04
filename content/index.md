@@ -1,7 +1,9 @@
 ---
-title: Welcome to Quartz
+title: Benvenuto/a!
+tags: 
+publish: "true"
 ---
+# Ciao!
+Questa è la guida di ButterflyOS, sistema operativo linux minimalista.
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
-bla bla e più bla
+>[!hint] È un work in progress...

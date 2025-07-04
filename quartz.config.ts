@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Butterfly Docs",
+    pageTitle: "🦋 Butterfly Docs",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -29,28 +29,28 @@ const config: QuartzConfig = {
       },
       colors: {
   lightMode: {
-    light: "rgb(255, 255, 255)",
-    lightgray: "rgb(240, 240, 240)",
-    gray: "rgb(111, 110, 105)",         // li-gray
-    darkgray: "rgb(94, 64, 157)",       // li-pu (es. testo importante)
-    dark: "rgb(32, 94, 166)",           // li-bl
-    secondary: "rgb(36, 131, 123)",     // li-cy
-    tertiary: "rgb(102, 128, 11)",      // li-gr
-    highlight: "rgba(173, 131, 1, 0.15)", // li-ye
-    textHighlight: "rgba(160, 47, 111, 0.5)", // li-ma
+    light: "#fffaf3",                            // page background
+    lightgray: "#e8e6e1",                        // borders
+    gray: "#d1cec9",                             // graph links, heavier borders
+    darkgray: "#6f6e69",                         // body text (li-gray)
+    dark: "#2c2b2a",                             // header text and icons
+    secondary: "rgb(188, 82, 21)",               // brand orange (li-or)
+    tertiary: "rgba(188, 82, 21, 0.3)",          // hover/visited links
+    highlight: "rgba(188, 82, 21, 0.1)",         // link/code bg highlight
+    textHighlight: "rgba(255, 242, 54, 0.53)",   // markdown highlight
   },
   darkMode: {
-    light: "rgb(22, 22, 24)",
-    lightgray: "rgb(50, 50, 50)",
-    gray: "rgb(159, 157, 150)",         // da-gray
-    darkgray: "rgb(139, 126, 200)",     // da-pu
-    dark: "rgb(67, 133, 190)",          // da-bl
-    secondary: "rgb(58, 169, 159)",     // da-cy
-    tertiary: "rgb(135, 154, 57)",      // da-gr
-    highlight: "rgba(208, 162, 21, 0.15)", // da-ye
-    textHighlight: "rgba(206, 93, 151, 0.5)", // da-ma
+    light: "#121212",                            // page background
+    lightgray: "#2b2b2b",                        // borders
+    gray: "#3f3f3f",                             // graph links, heavier borders
+    darkgray: "#9f9d96",                         // body text (da-gray)
+    dark: "#f5f5f5",                             // header text and icons
+    secondary: "rgb(218, 112, 44)",              // brand orange (da-or)
+    tertiary: "rgba(218, 112, 44, 0.3)",         // hover/visited links
+    highlight: "rgba(218, 112, 44, 0.15)",       // link/code bg highlight
+    textHighlight: "rgba(179, 170, 2, 0.53)",    // markdown highlight
   },
-},
+}
 
     },
   },
@@ -74,7 +74,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.ExplicitPublish()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),

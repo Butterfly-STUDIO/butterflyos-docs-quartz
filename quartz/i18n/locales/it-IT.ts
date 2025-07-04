@@ -33,7 +33,7 @@ export default {
       title: "Modalità lettura",
     },
     explorer: {
-      title: "Esplora",
+      title: "Argomenti",
     },
     footer: {
       createdWith: "Creato con",
@@ -51,13 +51,13 @@ export default {
     },
     search: {
       title: "Cerca",
-      searchBarPlaceholder: "Cerca qualcosa",
+      searchBarPlaceholder: "Che cosa vuoi sapere?",
     },
     tableOfContents: {
-      title: "Tabella dei contenuti",
+      title: "In questa pagina",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `${minutes} minuti`,
+      readingTime: ({ minutes }) => `${minutes} minuti di lettura`,
     },
   },
   pages: {
@@ -67,19 +67,19 @@ export default {
     },
     error: {
       title: "Non trovato",
-      notFound: "Questa pagina è privata o non esiste.",
-      home: "Ritorna alla home page",
+      notFound: "Abbiamo cercato questa pagina ovunque... ma non vi era traccia. Forse è stata cancellata, o magari è privata... . In ogni caso, meglio",
+      home: "tornare alla pagina iniziale",
     },
     folderContent: {
       folder: "Cartella",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 oggetto in questa cartella." : `${count} oggetti in questa cartella.`,
+        count === 1 ? "1 pagina in questa cartella." : `${count} pagine in questa cartella.`,
     },
     tagContent: {
       tag: "Etichetta",
       tagIndex: "Indice etichette",
       itemsUnderTag: ({ count }) =>
-        count === 1 ? "1 oggetto con questa etichetta." : `${count} oggetti con questa etichetta.`,
+        count === 1 ? "1 pagina con questa etichetta." : `${count} pagine con questa etichetta.`,
       showingFirst: ({ count }) => `Prime ${count} etichette.`,
       totalTags: ({ count }) => `Trovate ${count} etichette totali.`,
     },
