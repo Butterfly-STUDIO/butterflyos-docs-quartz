@@ -57,7 +57,7 @@ export default {
       title: "In questa pagina",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `${minutes} minuti di lettura`,
+      readingTime: ({ minutes }) => minutes === 1 ? `${minutes} minuto di lettura`: `${minutes} minuti di lettura`
     },
   },
   pages: {
