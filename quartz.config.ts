@@ -28,29 +28,30 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
-      },
+  lightMode: {
+    light: "rgb(255, 255, 255)",
+    lightgray: "rgb(240, 240, 240)",
+    gray: "rgb(111, 110, 105)",         // li-gray
+    darkgray: "rgb(94, 64, 157)",       // li-pu (es. testo importante)
+    dark: "rgb(32, 94, 166)",           // li-bl
+    secondary: "rgb(36, 131, 123)",     // li-cy
+    tertiary: "rgb(102, 128, 11)",      // li-gr
+    highlight: "rgba(173, 131, 1, 0.15)", // li-ye
+    textHighlight: "rgba(160, 47, 111, 0.5)", // li-ma
+  },
+  darkMode: {
+    light: "rgb(22, 22, 24)",
+    lightgray: "rgb(50, 50, 50)",
+    gray: "rgb(159, 157, 150)",         // da-gray
+    darkgray: "rgb(139, 126, 200)",     // da-pu
+    dark: "rgb(67, 133, 190)",          // da-bl
+    secondary: "rgb(58, 169, 159)",     // da-cy
+    tertiary: "rgb(135, 154, 57)",      // da-gr
+    highlight: "rgba(208, 162, 21, 0.15)", // da-ye
+    textHighlight: "rgba(206, 93, 151, 0.5)", // da-ma
+  },
+},
+
     },
   },
   plugins: {
